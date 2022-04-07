@@ -15,3 +15,22 @@
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
  */
+
+const checkPrimeNumber =  (number) =>{
+    let count = 0;
+    for(let j=1; j<=number;j++){
+        if(number%j === 0){
+            count+=1;            
+        }
+    }
+    if(count==2){
+        console.log(number);
+    }
+}
+
+checkPrimeNumber(4);
+
+for (let i = 0; i<=100; i++){
+    checkPrimeNumber(i);
+}
+
